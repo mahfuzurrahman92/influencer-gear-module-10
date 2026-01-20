@@ -1,0 +1,37 @@
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+
+/* common style */
+:root{
+    --primary-color:#3A3A3A;
+    --section-title:#18191F;
+    --price-color:#rgba(0, 0, 0, 0.87);
+    --section-description:#787885;
+}
+.display-flex{
+    display: flex;
+}
+nav{
+    border: 1px solid red;
+    max-width: 1155px;
+    margin: 0 auto;
+}
+/* header */
+
+
+/* nav */
+nav {
+    justify-content: space-between;
+    /* flex: 1; */
+}
+nav ul{
+    justify-content: space-around;
+    flex: 1;
+}
+nav ul li{
+    list-style: none;
+}
