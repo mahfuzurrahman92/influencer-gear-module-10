@@ -15,10 +15,21 @@
 .display-flex{
     display: flex;
 }
-nav{
+nav , .banner-container{
     border: 1px solid red;
     max-width: 1155px;
     margin: 0 auto;
+}
+.btn-p{
+    background-color: palevioletred;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    /* font-size: 18px; */
+}
+/* remove border */
+.banner-container , .banner-description , .banner-image{
+    border: 1px solid red;
 }
 /* header */
 
@@ -34,4 +45,47 @@ nav ul{
 }
 nav ul li{
     list-style: none;
+}
+/* banenr */
+.banner-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-description{
+    
+    max-width: 500px;
+}
+.banner-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.banner-description p {
+    color: var(--section-description);
+    font-size: medium;
+    line-height: 20px;
+}
+.banner-image{
+    
+    background-image: url(../images/Circle\ design.svg);
+    background-position: center;
+    border-radius: 50%;
+
+}
+.banner-image img{
+    width: 100%;
+}
+
+
+/* responsive for mobile */
+@media screen and (max-width: 576px) {
+    body{
+        padding: 10px;
+    }
+    .banner-container , nav {
+        flex-direction: column;
+ 
+    }
+
 }
